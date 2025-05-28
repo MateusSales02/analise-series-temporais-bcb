@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Análise de Séries Temporais - Banco Central</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #2a5d84;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .grafico {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-left: 6px solid #2a5d84;
+        }
+
+        h2 {
+            color: #2a5d84;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        strong {
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #eee;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Análise de Séries Temporais</h1>
+        <p>Dados Econômicos do Banco Central do Brasil</p>
+    </header>
+
+    <main>
+        {% for g in graficos %}
+        <div class="grafico">
+            <h2>{{ g.titulo }}</h2>
+            <p><strong>Descrição:</strong> {{ g.explicacao }}</p>
+            <img src="{{ g.imagem }}" alt="Gráfico de {{ g.titulo }}">
+            <p><strong>Interpretação:</strong> {{ g.interpretacao }}</p>
+        </div>
+        {% endfor %}
+    </main>
+
+    <footer>
+        Desenvolvido para fins acadêmicos • Flask + Pandas + Matplotlib
+    </footer>
+</body>
+</html>
