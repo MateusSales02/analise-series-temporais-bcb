@@ -53,7 +53,7 @@ N2_Camargo/
 ### 1. Clone este repositório
 
 ```bash
-git clone https://github.com/seu-usuario/analise-series-temporais-bcb.git
+git clone https://github.com/MateusSales02/analise-series-temporais-bcb.git
 cd analise-series-temporais-bcb
 ```
 
