@@ -114,4 +114,6 @@ Distribuição e uso livre com atribuição.
 ## 👨‍💻 Autor
 
 **Mateus Oliveira**  
+**Antono Favarin**  
+
 Projeto desenvolvido para a disciplina de **Análise de Séries Temporais**.
